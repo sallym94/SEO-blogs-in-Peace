@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Remove Neil Patel's annoying ads on his blog",
+  "version": "0.1.0",
+  "description": "Removes the side bar & the top autodetect bar from Neil Patel's blog. So I can actually enjoy his blog without all his annoying advertisement. I just want to read your content in peace.",
+
+  "content_scripts": [{
+  	"css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["http://neilpatel.com/blog/*"]
+  }]
+
+}
